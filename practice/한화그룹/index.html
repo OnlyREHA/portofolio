@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한화그룹</title>
-    <link href="./css/style.css" type="text/css" rel="stylesheet"> 
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="./script/script.js"></script>
 </head>
+
 <body>
 
     <div class="wrap">
@@ -13,71 +17,218 @@
         <header>
             <div class="logo">
                 <a href="#">
-                    <img src="https://www.hanwhacorp.co.kr/_resource/global_images/logo/header_logo_ko.png">
+                    <img src="./images/header_logo_black.png" alt="로고">
                 </a>
             </div>
             <nav>
                 <ul class="menu_wrap">
                     <li class="main_menu">
-                        <a href="#">mainmenu</a>
+                        <a href="#">한화소개</a>
                         <ul class="submenu_wrap">
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">기업소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">한화브랜드</a></li>
+                            <li><a href="#">재무정보</a></li>
                         </ul>
                     </li>
 
                     <li class="main_menu">
-                        <a href="#">mainmenu</a>
+                        <a href="#">사업분야</a>
                         <ul class="submenu_wrap">
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">우주항공·오션·방산</a></li>
+                            <li><a href="#">에너지·소재</a></li>
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">유통·서비스</a></li>
                         </ul>
                     </li>
 
                     <li class="main_menu">
-                        <a href="#">mainmenu</a>
+                        <a href="#">미디어룸</a>
                         <ul class="submenu_wrap">
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">한화인사이드</a></li>
+                            <li><a href="#">한화TV</a></li>
+                            <li><a href="#">소셜미디어</a></li>
                         </ul>
                     </li>
 
                     <li class="main_menu">
-                        <a href="#">mainmenu</a>
+                        <a href="#">지속가능경영</a>
                         <ul class="submenu_wrap">
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">윤리.준법경영</a></li>
+                            <li><a href="#">상생경영</a></li>
+                            <li><a href="#">사회공헌</a></li>
                         </ul>
                     </li>
 
                     <li class="main_menu">
-                        <a href="#">mainmenu</a>
+                        <a href="#">인재채용</a>
                         <ul class="submenu_wrap">
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
-                            <li><a href="#">submenu</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">인재경영원</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
+
+            <div class="right_box">
+                <div class="ko"><a href="#">한국어</a></div>
+                <div class="icon_box">
+                    <a href="#"><img
+                            src="https://img.freepik.com/premium-vector/search-icon-illustration-of-magnifying-glass-icon_690577-4.jpg"
+                            alt="돋보기>"> </a>
+                </div>
+            </div>
         </header>
 
-        <article></article>
+        <article>
+            <div>
+                <ul class="slide">
+                    <li>
+                        <a href="#"><img src="./images/168483986567978483.jpg" alt="슬라이드 이미지1">
+                        </a>
+                        <h1>지속가능한 내일을 만들어 갑니다 <br> 한화</h1>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/168483991444655272.jpg" alt="슬라이드 이미지2">
+                        </a>
+                        <h1>지속가능한 내일을 만들어 갑니다 <br> 한화</h1>
+                    </li>
+                </ul>
+                <div class="txt_box">
+                    지속가능한 캠페인 보기
+                </div>
+            </div>
+        </article>
 
-        <section></section>
+        <section>
+            <div class="main">
+                <div class="spotlight">
+                    <a href="#">
+                        <h2 class="main_tit">사업분야</h2>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/bg_business_01.png" alt="우주항공 이미지">
+                                <p class="main_txt">우주항공·오션·방산</p>
+                                <di class="sub_tit">
+                                    <dt>우주항공·오션·방산</dt>
+                                    <dd>
+                                        <span class="txt_hanwha">한화</span>
+                                        는 우주항공, 첨단 방산 분야의 독자적인 기술 혁신을 통해 <br> 지구에서 우주까지 지속가능한 인츠라 구축을 위한 <br> 솔루션을 제공하고자
+                                        합니다.
+                                    </dd>
+                                </di>
+                            </a>
+                        </li>
 
-        <footer></footer>
+                        <li>
+                            <a href="#"><img src="./images/bg_business_02.png" alt="연구이미지">
+                                <p class="main_txt">에너지·소재</p>
+                                <di class="sub_tit">
+                                    <dt>에너지·소재</dt>
+                                    <dd>
+                                        <span class="txt_hanwha">한화</span>
+                                        는 지구의 지속가능성을 높이기 위해 <br> 삶에 필수적인 에너지와 소재를 가장 친환경적으로 <br> 생산하고 사용할수 있는 방법을 제시하고자
+                                        합니다.
+                                    </dd>
+                                </di>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="./images/bg_business_03.png" alt="한화생명금융이미지">
+                                <p class="main_txt">금융</p>
+                                <di class="sub_tit">
+                                    <dt>금융</dt>
+                                    <dd>
+                                        <span class="txt_hanwha">한화</span>
+                                        는 다양한 라이프스타일에 최적화된 <br> 디지털 기반의 금융솔루션을 제공하여 <br> 고객과 사회의 지속가능한 풍요와 성장에 기여하고자
+                                        합니다.
+                                    </dd>
+                                </di>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="./images/bg_business_04.png" alt="한화센터이미지">
+                                <p class="main_txt">유통·서비스</p>
+                                <di class="sub_tit">
+                                    <dt>유통·서비스</dt>
+                                    <dd>
+                                        <span class="txt_hanwha">한화</span>
+                                        는 유통·서비스 분야의 온·오프라인 플랫폼을 통해 <br> 고객이 꿈꾸는 라이프스타일을 지속가능하게 하는 <br> 기업이 되고자 합니다.
+                                    </dd>
+                                </di>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="news">
+                    <a href="#">
+                        <h2 class="main_tit">뉴스</h2>
+                    </a>
+                    <div class="news_con">
+                        <div class="main_bg">
+                            <a href="#">
+                                <img src="./images/169535491851818286 (1).jpg" alt="전시관 사진">
+                                <div class="txt_cnt">
+                                    <h2>한화/모멘텀, 협동로봇 신제품 'HCR-14' 독일 전시회에서 성황리에 공개</h2>
+                                    <p>(주)한화 모멘텀부문(대표이사 양기원)은 18~23일 (현지시간)까지 독일 하노버에서 열리는 공작기계 전시회 'EMO2023'에 참가해
+                                        협동로봇...</p>
+                                    <span>2023 . 09 . 22 (주)한화 </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="txt_con">
+                            <a href="#">
+                                <div>
+                                    <img src="./images/169525764108357363.jpg" alt="운반선이미지">
+                                    <div class="img_tit" >
+                                        <span>한화오션, 대형 한화 이산화탄소 운반선 개발 나서</span>
+                                    </div>
+                                </div>
+                          
+                                <div class="last_box">
+                                    <img src="./images/169457861990995433.jpg" alt="한화오션로고이미지">
+                                    <div class="img_tit">
+                                        <span>한화, 엔진소재 추가 개발...<br>단계적 기술 축적으로 '엔진 국산화' 반드시 달성</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/header_logo_white (1).png" alt="로고">
+                </a>
+            </div>
+            <div class="copyright">
+                <strong>Hanwha Copyright&copy;2013 HANWHA GROUP ALL RIGHTS RESERVED</strong>
+                <span class="footer_txt"><a href="#">개인정보처리방침</a></span>
+            </div>
+            <div class="add_footer">
+                <select name="select" id="select" >
+                    <option value="">계열사 전체보기</option>
+                    <option value="계열사 전체보기">한화오션</option>
+                    <option value="계열사 전체보기">한화에너지</option>
+                    <option value="계열사 전체보기">한화생명</option>
+                    <option value="계열사 전체보기">한화커넥트</option>
+                </select>
+            </div>
+        </footer>
 
     </div>
-    
+
 </body>
+
 </html>

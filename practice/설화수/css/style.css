@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.wrap {
+    width: 2400px;
+    margin: 0 auto;
+}
+
+/* header영역 */
+header{
+    height: 120px;
+    background-color: lightblue;
+}
+
+.container{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+header.container{
+    position: fixed; 
+}
+
+.header_inner{
+    height: 70px;
+    background-color: antiquewhite;
+}
+
+.toggle_layer{
+    width: 150px;
+}
+
+
+.menu_wrap{
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+
+/* main영역 */
+main{
+    height: 420px;
+    background-color: lightpink;
+}
+
+
+/* article영역 */
+
+article{
+    height: 300px;
+    background-color: aliceblue;
+}
+
+/* section영역 */
+
+section{
+    height: 1000px;
+    background-color: lightgoldenrodyellow;
+}
+
+/* footer영역 */
+
+footer{
+    height: 120px;
+    background-color: black;
+}
