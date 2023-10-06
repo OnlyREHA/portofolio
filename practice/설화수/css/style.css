@@ -5,6 +5,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    color: #333333;
 }
 
 a {
@@ -17,68 +18,233 @@ img {
 }
 
 .wrap {
-    width: 2400px;
+    width: 100%;
     margin: 0 auto;
 }
 
 /* header영역 */
-header{
-    height: 120px;
-    background-color: lightblue;
+header {
+    width: 100%;
+    /* height: 150px;  */
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
 }
 
-.container{
-    width: 1920px;
+
+.container {
+    width: 1440px;
     margin: 0 auto;
 }
 
-header.container{
-    position: fixed; 
+.header_inner {
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header_inner{
-    height: 70px;
-    background-color: antiquewhite;
+.header_inner a {
+    color: white;
+    /* font-size: 16px; */
+    font-weight: 500;
 }
 
-.toggle_layer{
+.toggle_layer {
+    width: 150px;
+    margin-left: 30px;
+    line-height: 100px;
+}
+
+.toggle_layer::after {
+    content: "";
+    background-image: url(https://www.sulwhasoo.com/kr/ko/resource/img/mainnew/newsulwhasoo_hd_white_arr_b_220902.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 100%;
+    top: 45px;
+    margin-left: 5px;
+    position: absolute;
+
+}
+
+.logo {
+    background-image: url(https://www.sulwhasoo.com/kr/ko/resource/img/mainnew/sulwhasoo_white_logo_220902.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    margin-top: 25px;
+}
+
+.commer_link {
+    width: 200px;
+    margin-right: 30px;
+    display: flex;
+    line-height: 100px;
+
+}
+
+.commer_link span {
+    display: block;
+    width: 80px;
+}
+
+header:hover {
+    background-color: white;
+
+}
+
+header:hover a {
+    color: black;
+}
+
+header:hover .logo {
+    background-image: url(https://www.sulwhasoo.com/kr/ko/resource/img/mainnew/sulwhasoo_orange_logo_220902.png);
+}
+
+
+.menu_wrap {
+    width: 600px;
+    height: 40px;
+    margin-left: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu {
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.main_menu>a {
+    font-weight: 500;
+    color: white;
+}
+
+.submenu_wrap {
+    widows: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.submenu_wrap li {
     width: 150px;
 }
 
 
-.menu_wrap{
-    width: 1000px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    background-color: aliceblue;
-}
-
-
 /* main영역 */
-main{
-    height: 420px;
-    background-color: lightpink;
+main {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
 }
 
-
-/* article영역 */
-
-article{
-    height: 300px;
-    background-color: aliceblue;
+.slide_wrap {
+    width: 100%;
+    height: 80vh;
+    /* position: relative; */
 }
+
+.slide_wrap ul{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.slide_img {
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    display: block;
+    position: absolute;
+}
+
+.slide_img img{
+    display: block;
+    object-fit: cover;
+}
+
+.slidetxt_wrap {
+    width: 1000px;
+    height: 200px;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    transform: translate(-50%, -20%);
+    top: 90%;
+    left: 30%;
+    line-height: 65px;
+}
+
+.slide_txt {
+    font-size: 20px;
+    color: white;
+}
+
+.slide_tit {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
 
 /* section영역 */
 
-section{
-    height: 1000px;
-    background-color: lightgoldenrodyellow;
+section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px; 
 }
+
+.product_wrap {
+    width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.sec_tit{
+    display: block;
+    padding-left: 50px;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product_img{
+    width: 350px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.product_img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.text_wrap{
+    text-align: center;
+}
+
+
+
 
 /* footer영역 */
 
-footer{
+footer {
     height: 120px;
     background-color: black;
 }
