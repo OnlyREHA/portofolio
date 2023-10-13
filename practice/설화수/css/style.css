@@ -78,6 +78,7 @@ header {
     width: 200px;
     height: 55px;
     margin-top: 25px;
+    text-indent: -9999999em;
 }
 
 .commer_link {
@@ -124,18 +125,27 @@ header:hover .logo {
 .main_menu>a {
     font-weight: 500;
     color: white;
+    display: block;
 }
 
 .submenu_wrap {
-    widows: 600px;
+    width: 600px;
     height: 50px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #fff;
     display: none;
 }
 
-.submenu_wrap li {
+.submenu_wrap li{
     width: 150px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+.submenu_wrap li a{
+    display: block;
+    top: 0;
+    left: 0;
 }
 
 
@@ -348,7 +358,7 @@ section {
 
 .offline_store {
     width: 1440px;
-    height: 700px;
+    height: 600px;
     margin: 20px auto;
 }
 
@@ -357,43 +367,74 @@ section {
     margin-bottom: 10px;
 }
 
-.offline_store .product li .text_wrap .add_box{
-    margin: 10px auto; 
+.offline_store .product li .text_wrap .add_box {
+    margin: 10px auto;
 }
 
-.offline_store .product li .text_wrap .add_box p{
+.offline_store .product li .text_wrap .add_box p {
     margin-top: 0;
 }
 
 /* //offline_store */
 
 
+.footer_link_wrap{
+    overflow: hidden;
+}
+.footer_link {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+}
 
-
-
-
-.footer_link ul{
+.footer_link ul {
     width: 1100px;
     display: flex;
     justify-content: start;
-    margin: 0 auto;
+
     /* overflow: hidden; */
 }
 
-.footer_link ul li{
-    width: 150px;
+.footer_link ul li {
+    width: 180px;
     height: 50px;
-    display: block;
-    font-size: 15px;
+    /* display: block; */
+    font-size: 18px;
     text-align: center;
     line-height: 50px;
-    margin-right: 10px;
-    padding: 10px;
-   
+    margin-right: 5px;
+    padding: 5px;
+    white-space:nowrap; /* -> 텍스트 넘칠때 */
 }
 
-.link_icon{
-    float: right;
+.footer_link>ul li::after{
+    content: '|';
+    margin-left: 25px;
+
 }
 
-.footer_item_wrap{}
+
+.link_icon {
+    /* float: right; */
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_icon ul li {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_item_wrap {
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.footer_item_wrap span{
+    display: block;
+    font-size: 18px;
+    margin: 5px 3px ;
+}
